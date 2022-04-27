@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MealList from "./MealList";
 
-function App() {
+function Getapi() {
   const [mealData, setMealData] = useState(null);
   const [calories, setCalories] = useState(2000);
 
@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="Getapi">
       <section className="controls">
         <input
           type="number"
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Getapi;
