@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 
