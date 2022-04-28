@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ingredient.css";
 
 const Ingredient = () => {
   const [query, setQuery] = useState();
