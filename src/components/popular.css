@@ -1,0 +1,15 @@
+.container {
+    background-color: white;
+    padding: 5px;
+    margin: 20px;
+    /* display: flex; */
+}
+
+.container img {
+    width: 200px;
+}
+
+/* .wrapper {
+    display: flex;
+
+} */

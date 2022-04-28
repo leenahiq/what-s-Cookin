@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Recipe from "./pages/searchRecipes/recipe";
 import Calories from "./pages/calories/Final";
-// import "./App.css";
+import "./App.css";
 
 // import Ingredient from "./pages/ingredient";
 
