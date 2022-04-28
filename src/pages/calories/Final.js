@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MealList from "./MealList";
 
-function Getapi() {
+function Calories() {
   const [mealData, setMealData] = useState(null);
   const [calories, setCalories] = useState(2000);
 
@@ -37,4 +37,4 @@ function Getapi() {
   );
 }
 
-export default Getapi;
+export default Calories;

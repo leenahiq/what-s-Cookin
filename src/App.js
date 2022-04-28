@@ -1,36 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router,
-  Route,
-  Routes
-} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import About from './pages/about/about';
-import Profile from './pages/profile/profile';
-import Home from './pages/Home/Home';
-import SearchRecipes from './pages/searchRecipes/searchRecipes';
-import Navbar from './components/Navbar/Navbar';
-
-
+import About from "./pages/about/about";
+import Home from "./pages/Home/Home";
+import Navbar from "./components/navbar/navbar";
+import Recipe from "./pages/searchRecipes/recipe";
+import Calories from "./pages/calories/Final";
 // import "./App.css";
-// import Getapi from "./pages/api/Final";
+
 // import Ingredient from "./pages/ingredient";
-// import Recipe from "./pages/recipe";
 
 function App() {
   return (
     <div>
-      {/* <Getapi />
-      <Recipe />
-      <Ingredient /> */}
+      {/* <Ingredient /> */}
       <Router>
-      <Navbar/>
+        <Navbar />
         <Routes>
-        <Route path='/' element={<Home />} exact/>
-        <Route path='/About' element={<About />}  exact/>
-        <Route path='/profile' element={<Profile />}  exact/>
-        <Route path='/searchRecipes' element={<SearchRecipes />}  exact/>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/about" element={<About />} exact />
+          <Route path="/calories" element={<Calories />} exact />
+          <Route path="/recipes" element={<Recipe />} exact />
         </Routes>
-    </Router>
+      </Router>
     </div>
   );
 }
