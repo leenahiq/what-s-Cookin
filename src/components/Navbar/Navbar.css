@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+  font-family: boldfont;
+  src: url(../../Fonts/FuturaPTBold.otf);
+}
+
+@font-face {
+  font-family: lightfont;
+  src: url(../../Fonts/FuturaPTLight.otf);
+}
 
 body{
-    font-family: 'Roboto', sans-serif;
     background: #fff; 
 }
 * {
@@ -12,15 +19,27 @@ i {
     margin-right: 10px;
 }
 
+nav {
+  font-family: boldfont;
+}
+
+.nav-item {
+  font-family: lightfont;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
 .navbar-logo {
     padding: 15px;
-    color: #fff;
+    color: white;
     pointer-events: none;
     flex: 1;
 }
 
 .navbar-mainbg {
-    background-color: #9c2d40;
+    background-color: #F49F9F;
     padding: 0px;
     padding-bottom: 0 !important;
 }
@@ -42,7 +61,7 @@ i {
     float: left;
   }
   #navbarSupportedContent ul li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     text-decoration: none;
     font-size: 15px;
     display: block;
@@ -52,7 +71,7 @@ i {
     position: relative;
   }
   #navbarSupportedContent > ul > li.active > a {
-    color: #000000e1;
+    color: white;
     background-color: transparent;
     transition: all 0.7s;
   }
@@ -62,7 +81,7 @@ i {
     right: 20px;
     top: 10px;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: boldfont;
     display: inline-block;
     padding-right: 3px;
     vertical-align: middle;
@@ -81,17 +100,18 @@ i {
     left: 0px;
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background-color: rgb(244, 244, 244);
+    background-color: #F49F9F;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 10px;
+    box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
   }
   .hori-selector .right,
   .hori-selector .left {
     position: absolute;
     /* width: 25px;
     height: 25px; */
-    background-color: #fff;
+    background-color: #F49F9F;
     bottom: 10px;
   }
   .hori-selector .right {

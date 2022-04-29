@@ -8,7 +8,7 @@
     src: url(../../Fonts/FuturaPTLight.otf);
 }
 
-button {
+.Getapi button {
     font-family: lightfont;
     border: none;
     background-color: transparent;
@@ -18,12 +18,12 @@ button {
     font-size:20px;
 }
 
-button:hover {
+.Getapi button:hover {
     cursor: pointer;
     background-color: #B8B8B8;
   }
 
-input {
+.Getapi input {
     font-family: lightfont;
     border: none;
     background-color: transparent;
@@ -34,7 +34,7 @@ input {
     
 }
 
-input::placeholder {
+.Getapi input::placeholder {
     color: black;
     justify-content: center;
 }
@@ -42,4 +42,18 @@ input::placeholder {
 input:focus {
     outline: none;
     
+}
+
+.Getapi {
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    padding-top: 20px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }

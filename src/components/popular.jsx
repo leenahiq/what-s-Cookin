@@ -20,10 +20,16 @@ const Popular = () => {
     <div>
       {popular.map((recipe) => {
         return (
-          <div className="wrapper">
-            <div className="container" key={recipe.id}>
+          <div className="container">
+            <div 
+            className="wrapper" 
+            key={recipe.id}
+            >
               <p>{recipe.title}</p>
-              <img src={recipe.image} alt="images" />
+              <img 
+              src={recipe.image} 
+              alt="images" 
+              />
             </div>
           </div>
         );

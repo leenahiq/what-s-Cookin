@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Meal.css";
 
 export default function Meal({ meal }) {
   const [imageUrl, setImageUrl] = useState("");
@@ -17,16 +18,17 @@ export default function Meal({ meal }) {
   }, [meal.id]);
 
   return (
+    <div className="container" >
     <article>
       <h2>{meal.title}</h2>
       <img src={imageUrl} alt="recipe" />
       <ul className="instructions">
         <li>Preparation time: {meal.readyInMinutes} minutes</li>
         <li>Number of servings: {meal.servings}</li>
-        <li>Vegan: {meal.vegan}</li>
       </ul>
 
       <a href={meal.sourceUrl}>Go to Recipe</a>
     </article>
+    </div>
   );
 }
