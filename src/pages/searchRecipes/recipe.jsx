@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./recipe.css";
 
 const Recipe = () => {
   const [query, setQuery] = useState();
@@ -16,7 +17,7 @@ const Recipe = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={changeHandler}>
         <input
           type="text"
@@ -27,7 +28,8 @@ const Recipe = () => {
       </form>
 
       {recipe.map((recipe) => (
-        <div key={recipe.id}>
+        <div
+        key={recipe.id}>
           <p>{recipe.title}</p>
           <img src={recipe.image} alt="images" />
         </div>
