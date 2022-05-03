@@ -138,10 +138,10 @@ function App() {
           <Navbar user={user} setUser={setUser} />
           <Nav2 user={user} setUser={setUser} />
           <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/about" element={<About />} exact />
-            <Route path="/calories" element={<Calories />} exact />
-            {/*route to Recipe page  */}
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/calories" element={<Calories />} />
+            {/* route to Recipe page  */}
             <Route
               path="/recipes"
               element={
@@ -152,6 +152,7 @@ function App() {
                     <input
                       type="text"
                       name="query"
+                      s
                       onChange={onChange}
                       value={query}
                       autoComplete="off"
@@ -167,9 +168,8 @@ function App() {
                   </div>
                 </div>
               }
-              exact
             />
-            <Route path="/list" element={<List />} exact />
+            <Route path="/list" element={<List />} />
           </Routes>
         </Router>
       )}
