@@ -89,7 +89,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/signup" exact>
+            <NavLink className="nav-link" to="/calories" exact>
               <i className="far fa-copy"></i>Calories
             </NavLink>
           </li>
