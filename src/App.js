@@ -13,6 +13,8 @@ import Calories from "./pages/calories/Final";
 import "./App.css";
 import Login from "./components/login";
 import Signup from "./components/signup";
+import Nav2 from "./components/navbar2/navbar2";
+import List from "./pages/list/list";
 
 // import Ingredient from "./pages/ingredient";
 
@@ -105,7 +107,7 @@ function App() {
   return (
     <div>
       {/* login/signup with conditional rendering */}
-      {/* {!user && (
+      {!user && (
         <div className="container">
           {isclicked ? (
             <Login
@@ -129,45 +131,48 @@ function App() {
             />
           )}
         </div>
-      )} */}
-      {/* <Ingredient /> */}
-      {/* {user && ( */}
-      <Router>
-        <Navbar user={user} setUser={setUser} />
-        <Routes>
-          <Route path="/" element={<Home />} exact />
-          <Route path="/about" element={<About />} exact />
-          <Route path="/calories" element={<Calories />} exact />
-          <Route
-            path="/recipes"
-            element={
-              <div className="App">
-                <h1>Food Searching App</h1>
-                <form onSubmit={onSubmit} className="search-form">
-                  {alert !== "" && <Alert alert={alert} />}
-                  <input
-                    type="text"
-                    name="query"
-                    onChange={onChange}
-                    value={query}
-                    autoComplete="off"
-                    placeholder="Search Food"
-                  />
-                  <input type="submit" value="Search" />
-                </form>
-                <div className="recipes">
-                  {recipes !== [] &&
-                    recipes.map((recipe) => (
-                      <Recipe key={uuidv4()} recipe={recipe} />
-                    ))}
+      )}
+      {/* routes to all pages home about meal plan */}
+      {user && (
+        <Router>
+          <Navbar user={user} setUser={setUser} />
+          <Nav2 user={user} setUser={setUser} />
+          <Routes>
+            <Route path="/" element={<Home />} exact />
+            <Route path="/about" element={<About />} exact />
+            <Route path="/calories" element={<Calories />} exact />
+            {/*route to Recipe page  */}
+            <Route
+              path="/recipes"
+              element={
+                <div className="App">
+                  <h1>Food Searching App</h1>
+                  <form onSubmit={onSubmit} className="search-form">
+                    {alert !== "" && <Alert alert={alert} />}
+                    <input
+                      type="text"
+                      name="query"
+                      onChange={onChange}
+                      value={query}
+                      autoComplete="off"
+                      placeholder="Search Food"
+                    />
+                    <input type="submit" value="Search" />
+                  </form>
+                  <div className="recipes">
+                    {recipes !== [] &&
+                      recipes.map((recipe) => (
+                        <Recipe key={uuidv4()} recipe={recipe} />
+                      ))}
+                  </div>
                 </div>
-              </div>
-            }
-            exact
-          />
-        </Routes>
-      </Router>
-      {/* )} */}
+              }
+              exact
+            />
+            <Route path="/list" element={<List />} exact />
+          </Routes>
+        </Router>
+      )}
     </div>
   );
 }
