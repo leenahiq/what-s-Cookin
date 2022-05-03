@@ -27,7 +27,7 @@ const Input = ({
                 value={todo}
               />
 
-              <button type="submit">Add Todo</button>
+              <button type="submit">Add To List</button>
             </form>
           </div>
 
