@@ -1,0 +1,13 @@
+@font-face {
+    font-family: boldfont;
+    src: url(../../Fonts/FuturaPTBold.otf);
+  }
+  
+  @font-face {
+    font-family: lightfont;
+    src: url(../../Fonts/FuturaPTLight.otf);
+  }
+
+  .container {
+      font-family: lightfont;
+  }

@@ -1,3 +1,4 @@
+ loginSignupByLee
 /* login signup form */
 .containerf {
   display: flex;
@@ -80,3 +81,8 @@ button {
 .containerf div:nth-of-type(2) {
   flex-grow: 0.2;
 } */
+
+body {
+    background-color: white;
+}
+
