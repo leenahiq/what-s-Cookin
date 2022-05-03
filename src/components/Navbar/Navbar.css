@@ -31,9 +31,18 @@ nav {
   cursor: pointer;
 }
 
+.logo{
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  margin-top: -70px;
+}
+
 .navbar-logo {
-    padding: 15px;
-    color: white;
+    width: 10px;
+    height: 2;
+    padding: 10px;
+    color: rgb(136, 4, 4);
     pointer-events: none;
     flex: 1;
 }
