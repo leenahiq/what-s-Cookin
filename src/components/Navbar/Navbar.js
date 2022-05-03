@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import logo from './logo.png'
 
 const Navbar = () => {
   function animation() {
@@ -45,7 +46,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        WhatsChef
+        <img className='logo' src={logo} alt='logo'/>
       </NavLink>
 
       <button
@@ -74,23 +75,23 @@ const Navbar = () => {
 
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
-              <i className="fas fa-tachometer-alt"></i>Home
+              <i className="fas fa-tachometer-alt"></i><i class="bi bi-house-door"></i>Home
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/about" exact>
-              <i className="far fa-address-book"></i>About
+              <i className="far fa-address-book"><i class="bi bi-file-earmark-person"></i></i>About
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/recipes" exact>
-              <i className="far fa-chart-bar"></i>Recipes
+              <i className="far fa-chart-bar"><i class="bi bi-egg-fried"></i></i>Recipes
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/calories" exact>
-              <i className="far fa-copy"></i>Calories
+              <i className="far fa-copy"><i class="bi bi-bar-chart-line-fill"></i></i>Calories
             </NavLink>
           </li>
         </ul>
