@@ -1,3 +1,88 @@
+ loginSignupByLee
+/* login signup form */
+.containerf {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: auto;
+  margin-top: 10px;
+  padding: 30px;
+
+  align-items: center;
+}
+.containerf:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.logside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f9d44f;
+  height: 85vh;
+  width: 70vh;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.text h1,
+.text h3 {
+  color: #6c4812;
+  margin-top: 30px;
+}
+img {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 40vh;
+  width: 40vh;
+  margin: auto;
+}
+form {
+  border: 1px solid rgba(128, 128, 128, 0.409);
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+  height: 85vh;
+  width: 70vh;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+form h1 {
+  color: #f49f9f;
+}
+input {
+  padding: 10px 15px 10px 15px;
+}
+
+button {
+  width: 50vh;
+  padding: 10px 15px 10px 15px;
+  background-color: #f49f9f;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* .containerf div:nth-of-type(1) {
+  flex-grow: 0.2;
+}
+.containerf div:nth-of-type(2) {
+  flex-grow: 0.2;
+} */
+
 body {
     background-color: white;
 }
+
