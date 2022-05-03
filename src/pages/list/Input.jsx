@@ -1,4 +1,4 @@
-// destructure hooks and all function
+// s
 const Input = ({
   handleSubmit,
   setTodo,
