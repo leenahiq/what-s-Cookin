@@ -41,6 +41,7 @@ nav img {
   height: 18vh;
   width: 18vh;
   margin-top: -73px;
+  /* change px to % -7.5% */
 }
 
 .navbar-logo {

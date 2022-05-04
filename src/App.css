@@ -34,15 +34,16 @@ body {
 }
 
 .search-form {
+  display: flex;
+  justify-content: center;
   font-family: lightfont;
   height: 15vh;
-  width: 200;
-  display: flex;
-  align-content: center;
+  width: 120vh;
   background: #ffffff;
   border: 1px solid #000000;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 46px;
+  margin: 20px;
 }
 
 h1,
@@ -70,22 +71,25 @@ recipe .button {
   font-size: 35px;
   font-weight: 900;
 }
-img {
+
+.recipe-img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   height: 60vh;
   width: 60vh;
   margin: auto;
 }
+
 .imglogin {
   width: 75vh;
   height: 75vh;
 }
+
 .form {
   border: 1px solid rgba(128, 128, 128, 0.409);
 }
+
 form {
   border: 1px solid black;
 
@@ -196,9 +200,12 @@ form input {
 
 .recipe {
   display: flex;
+  flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  align-content: center;
   padding: 0 150px 0 150px;
+  border: 2px black;
 }
 
 .recipe img {
@@ -206,6 +213,19 @@ form input {
   height: 250px;
   padding: 10px;
   border-radius: 5px;
+}
+
+.recipe button {
+  font-family: lightfont;
+}
+
+.recipe-card {
+  padding: 4vh 12vh 4vh 12vh;
+  margin: 20px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 46px;
 }
 
 .nutrients {
@@ -242,6 +262,41 @@ form input {
 .recipe a:active {
   color: black;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.linkedin,
+.github {
+  font-family: lightfont;
+  background-color: transparent;
+  border: 2px solid #858585;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  padding: 1vh;
+  margin: 0.25vh;
+  text-decoration: none;
+}
+
+.recipe-button,
+.go-to-recipe-button {
+  font-family: lightfont;
+  background-color: transparent;
+  border: 2px solid #858585;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  padding: 2%;
+  margin: 2%;
+}
+
+.linkedin:hover,
+.github:hover,
+.recipe-button:hover,
+.go-to-recipe-button:hover {
+  background-color: #f49f9f;
+  color: black;
+  cursor: pointer;
 }
 
 .Getapi button {
@@ -312,20 +367,36 @@ p {
   font-family: lightfont;
 }
 
-/* .about-container {
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 46px; 
-  height: 90vh;
-} */
+.about-container {
+  /* background: #FFFFFF; */
+  /* border: 1px solid red; */
+  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 46px; 
+  height: 90vh; */
+  display: flex;
+  justify-content: center;
+}
 
 .about-container .header {
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 46px;
-  height: 25vh;
+  margin: 20px;
+}
+
+/* .team-img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 30%;
+  margin: auto;
+} */
+
+.job-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.header-container {
+  /* border: 1px solid orange; */
 }
 
 .about-container .team-card {
@@ -338,9 +409,18 @@ p {
   border: 1px solid #000000;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 46px;
-  height: 25vh;
+  height: 55vh;
   width: 25vh;
-  padding: 0 150px 0 150px;
+  padding: 10px 150px 10px 150px;
+  margin: 20px;
+}
+
+.team-card-container {
+  /* border: 1px solid pink; */
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 25%;
 }
 
 li {

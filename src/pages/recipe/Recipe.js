@@ -8,13 +8,17 @@ const Recipe = ({ recipe }) => {
 
   return (
     <div className="recipe">
+      <div className="recipe-card">
       <h2>{label}</h2>
+      <div className="recipe-image">
       <img src={image} alt={label} />
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      </div>
+      <a className="go-to-recipe-button" href={url} target="_blank" rel="noopener noreferrer">
         Go to Recipe 
       </a>
-      <button onClick={() => setShow(!show)}>Ingredients</button>
+      <a className="recipe-button" onClick={() => setShow(!show)}>Ingredients</a>
       {show && <RecipeDetails ingredients={ingredients} />}
+      </div>
     </div>
   );
 };
