@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        WhatsChef
+      What's Cookin!
       </NavLink>
 
       <button

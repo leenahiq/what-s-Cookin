@@ -141,8 +141,8 @@ function App() {
           <Route
             path="/recipes"
             element={
-              <div className="App">
-                <h1>Food Searching App</h1>
+              <div className="recipe-search">
+                {/* <h1>Food Searching App</h1> */}
                 <form onSubmit={onSubmit} className="search-form">
                   {alert !== "" && <Alert alert={alert} />}
                   <input
@@ -151,7 +151,7 @@ function App() {
                     onChange={onChange}
                     value={query}
                     autoComplete="off"
-                    placeholder="Search Food"
+                    placeholder="search ingredient or dish"
                   />
                   <input type="submit" value="Search" />
                 </form>
