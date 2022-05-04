@@ -84,13 +84,20 @@ recipe .button {
 .imglogin {
   width: 75vh;
   height: 75vh;
+  margin-left: 20px;
+}
+.imgsignup {
+  width: 60vh;
+  height: 60vh;
+  margin-left: 70px;
+  margin-bottom: 30px;
 }
 
 .form {
   border: 1px solid rgba(128, 128, 128, 0.409);
 }
 
-form {
+.form form {
   border: 1px solid black;
 
   display: flex;
@@ -112,13 +119,13 @@ form {
   flex-wrap: wrap;
 }
 
-form h1 {
+.form form h1 {
   color: #f49f9f;
   margin-bottom: 80px;
   font-size: 35px;
   font-weight: 900;
 }
-form p {
+.form form p {
   color: blue;
   font-size: 20px;
   font-weight: 500;

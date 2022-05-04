@@ -14,7 +14,7 @@ const Signup = ({
           <h1>What's Cookin!</h1>
           <h3>Desire Acording to your mood </h3>
         </div>
-        <img src={img2} alt="img" />
+        <img className="imgsignup" src={img2} alt="img" />
       </div>
       <div className="form">
         <form onSubmit={handler}>
