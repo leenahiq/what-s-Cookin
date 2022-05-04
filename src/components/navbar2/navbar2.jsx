@@ -4,14 +4,17 @@ const Nav2 = ({ user, setUser }) => {
     setUser();
   };
   return (
-    <div>
-      {!user && <Navigate to="/signup" />}
-
-      <button onClick={logOutHandeler}>logout</button>
-
-      <NavLink className="nav-link" to="/list" exact>
-        <button>Shopping List</button>
-      </NavLink>
+    <div className="nav2">
+      <div>
+        <NavLink className="list" to="/list" exact>
+          <button>Shopping List</button>
+        </NavLink>
+      </div>
+      <div className="logout">
+        {user}&nbsp
+        {!user && <Navigate to="/signup" />}
+        <button onClick={logOutHandeler}>logout</button>
+      </div>
     </div>
   );
 };
