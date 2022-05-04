@@ -46,7 +46,11 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
+
+      What's Cookin!
+
         <img className='logo' src={logo} alt='logo'/>
+
       </NavLink>
 
       <button
