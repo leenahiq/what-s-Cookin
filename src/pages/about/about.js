@@ -12,12 +12,10 @@ const About = () => {
     <div className="about-container">
       <div className="header-container">
       <div className="header">
-      <h1 className="text-center" 
-      style={{ paddingTop: "20px" }}
-      >
-     This project is made by desk 4 of Code Nation. Contributors are Holy,
-        Leenah, Ryan, Michael and Farzad.
-      </h1>
+        <h1 className="text-center" style={{ paddingTop: "20px" }}>
+          This project is made by desk 4 of Code Nation. Contributors are Holy,
+          Leenah, Ryan, Michael and Farzad.
+        </h1>
       </div>
       </div>
       {/* end of header container */}
@@ -83,9 +81,9 @@ const About = () => {
       {/* <a className="linkedin">Linkedin</a> */}
       <a className="github" href="https://github.com/farghd" target="_blank" rel="noreferrer">GitHub</a>
       </div>
+
       </div>
     </div>
-    
   );
 };
 
