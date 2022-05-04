@@ -138,9 +138,10 @@ function App() {
           <Navbar user={user} setUser={setUser} />
           <Nav2 user={user} setUser={setUser} />
           <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/about" element={<About />} exact />
-            <Route path="/calories" element={<Calories />} exact />
+            <Route path="/" element={<Home />} exact="true" />
+
+            <Route path="/calories" element={<Calories />} exact="true" />
+            <Route path="/about" element={<About />} exact="true" />
             <Route
               path="/recipes"
               element={

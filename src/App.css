@@ -166,6 +166,7 @@ form input {
   padding-right: 5px;
 }
 .nav2 button {
+  margin-left: 5px;
   padding: 8px;
   background-color: #f49f9f;
   color: white;
