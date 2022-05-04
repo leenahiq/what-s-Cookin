@@ -1,0 +1,25 @@
+.Getapi {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 46px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.controls {
+    padding: 2px;
+}
+
+.controls button {
+    background-color: #f49f9f;
+    color: white;
+    margin: 2px;
+}
+
