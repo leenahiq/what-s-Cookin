@@ -12,7 +12,7 @@ const Login = ({
     <div className="containerf">
       <div className="logside">
         <div className="text">
-          <h1>Whats-Chef</h1>
+          <h1>What's Cookin!</h1>
           <h3>Desire Acording to your mood </h3>
         </div>
 
