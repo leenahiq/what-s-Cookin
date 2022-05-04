@@ -164,21 +164,23 @@ form input {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  color: #6c4812;
   margin-top: 3px;
   padding-left: 5px;
   padding-right: 5px;
 }
 .nav2 button {
   margin-left: 5px;
-  padding: 8px;
+  padding: 5px;
   background-color: #f49f9f;
   color: white;
-  font-size: 15px;
-  font-weight: 300;
-  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
   border: none;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.nav2 button:hover {
+  background-color: #f26060;
 }
 
 @media only screen and (max-width: 1100px) {
