@@ -150,6 +150,9 @@ nav img {
   .logo {
     margin-top: -60px;
   }
+  .navbar-toggler {
+    border: 1px solid #f49f9f;
+  }
 
   .hori-selector {
     margin-top: 0px;

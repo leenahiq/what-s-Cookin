@@ -79,12 +79,12 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink className="nav-link" to="/about" exact>
               <i class="bi bi-file-earmark-person"></i>
               About
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
             <NavLink className="nav-link" to="/recipes" exact>
               <i class="bi bi-egg-fried"></i>
@@ -95,6 +95,12 @@ const Navbar = () => {
             <NavLink className="nav-link" to="/calories" exact>
               <i class="bi bi-bar-chart-line-fill"></i>
               Calories
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/about" exact>
+              <i class="bi bi-file-earmark-person"></i>
+              About
             </NavLink>
           </li>
         </ul>

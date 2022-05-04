@@ -6,12 +6,12 @@ const Nav2 = ({ user, setUser }) => {
   return (
     <div className="nav2">
       <div>
-        <NavLink className="list" to="/list" exact>
+        <NavLink className="list" to="/list" exact="true">
           <button>Shopping List</button>
         </NavLink>
       </div>
       <div className="logout">
-        {user}&nbsp
+        {user}
         {!user && <Navigate to="/signup" />}
         <button onClick={logOutHandeler}>logout</button>
       </div>
