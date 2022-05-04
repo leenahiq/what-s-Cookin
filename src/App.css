@@ -1,3 +1,13 @@
+@font-face {
+  font-family: boldfont;
+  src: url(../src/Fonts/FuturaPTBold.otf);
+}
+
+@font-face {
+  font-family: lightfont;
+  src: url(../src/Fonts/FuturaPTLight.otf);
+}
+ 
  loginSignupByLee
 /* login signup form */
 .containerf {
@@ -6,7 +16,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px black, 0 1px 2px black;
 
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   margin: auto;
@@ -16,8 +26,29 @@
   align-items: center;
 }
 .containerf:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px black, 0 6px 6px black;
 }
+
+.search-form {
+  font-family: lightfont;
+  height: 15vh;
+  width: 200;
+  display: flex;
+  align-content: center;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 46px;
+}
+
+h1, 
+h2,
+a,
+recipe .button {
+  font-family: lightfont;
+}
+
+
 .logside {
   display: flex;
   justify-content: space-between;
@@ -27,7 +58,7 @@
   height: 85vh;
   width: 70vh;
   text-align: center;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 3px black, 0 1px 2px black;;
 }
 .text h1,
 .text h3 {
@@ -36,15 +67,14 @@
 }
 img {
   display: flex;
-
   flex-direction: column;
   flex-wrap: wrap;
   height: 40vh;
-  width: 40vh;
+  width: 45vh;
   margin: auto;
 }
 form {
-  border: 1px solid rgba(128, 128, 128, 0.409);
+  border: 1px solid black;
   display: flex;
   justify-content: baseline;
   flex-direction: column;
@@ -54,7 +84,7 @@ form {
   width: 70vh;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px black, 0 15px 12px black;
   text-align: center;
 }
 
@@ -86,3 +116,163 @@ body {
     background-color: white;
 }
 
+.recipe {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 150px 0 150px;
+}
+
+.recipe img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nutrients {
+  font-family: lightfont;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px 0 150px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+.calorie-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px 0 150px;
+  background: #FFFFFF;
+  border: 1px solid black;
+  box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.calorie-container a,
+.calorie-container a:visited,
+.calorie-container a:hover,
+.calorie-container a:active,
+.recipe a,
+.recipe a:visited,
+.recipe a:hover,
+.recipe a:active
+{
+  color: black;
+  text-decoration: none;
+
+}
+
+.Getapi button {
+  font-family: lightfont;
+  border: none;
+  background-color: transparent;
+  border:2px solid #858585;
+  border-radius: 8px;
+  color: black;
+  font-size:20px;
+}
+
+.Getapi button:hover {
+  cursor: pointer;
+  background-color: #B8B8B8;
+}
+
+.Getapi input {
+  font-family: lightfont;
+  border: none;
+  background-color: transparent;
+  border:2px solid #858585;
+  border-radius: 8px;
+  color: black;
+  font-size:20px;
+  
+}
+
+.Getapi input::placeholder {
+  color: black;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+  
+}
+
+.Getapi {
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px 0 150px;
+  padding-top: 20px;
+  background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 46px;
+}
+
+.recipe-container {
+  border: 1px solid black;
+  box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 60vh;
+  width: 100vh;
+
+}
+
+.recipe-container img {
+  width: 300px;
+}
+
+p {
+  font-family: lightfont;
+}
+
+/* .about-container {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 46px; 
+  height: 90vh;
+} */
+
+.about-container .header {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 46px; 
+  height: 25vh;
+}
+
+.about-container .team-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 46px; 
+  height: 25vh;
+  width: 25vh;
+  padding: 0 150px 0 150px;
+
+}
+
+li {
+  font-family: lightfont;
+  list-style-type: none;
+}

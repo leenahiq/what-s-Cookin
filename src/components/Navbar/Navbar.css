@@ -23,6 +23,11 @@ nav {
   font-family: boldfont;
 }
 
+nav img {
+  height: 20vh;
+  width: 20vh;
+}
+
 .nav-item {
   font-family: lightfont;
 }

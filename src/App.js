@@ -131,6 +131,39 @@ function App() {
             />
           )}
         </div>
+
+      )} 
+     
+      {user && ( 
+      <Router>
+        <Navbar user={user} setUser={setUser} />
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/about" element={<About />} exact />
+          <Route path="/calories" element={<Calories />} exact />
+          <Route
+            path="/recipes"
+            element={
+              <div className="recipe-search">
+                {/* <h1>Food Searching App</h1> */}
+                <form onSubmit={onSubmit} className="search-form">
+                  {alert !== "" && <Alert alert={alert} />}
+                  <input
+                    type="text"
+                    name="query"
+                    onChange={onChange}
+                    value={query}
+                    autoComplete="off"
+                    placeholder="search ingredient or dish"
+                  />
+                  <input type="submit" value="Search" />
+                </form>
+                <div className="recipes">
+                  {recipes !== [] &&
+                    recipes.map((recipe) => (
+                      <Recipe key={uuidv4()} recipe={recipe} />
+                    ))}
+
       )}
       {/* routes to all pages home about meal plan */}
       {user && (
