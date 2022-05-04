@@ -87,7 +87,7 @@ img {
   border: 1px solid rgba(128, 128, 128, 0.409);
 }
 form {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 
   display: flex;
   justify-content: center;
