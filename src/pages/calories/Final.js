@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MealList from "./MealList";
-import "../../App.css";
+// import "../../App.css";
+import "./final.css"
 
 function Calories() {
   const [mealData, setMealData] = useState(null);

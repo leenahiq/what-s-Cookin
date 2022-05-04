@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../App.css";
+import "./Meal.css";
 
 export default function Meal({ meal }) {
   const [imageUrl, setImageUrl] = useState("");
