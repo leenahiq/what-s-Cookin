@@ -7,7 +7,7 @@ const Nav2 = ({ user, setUser }) => {
     <div className="nav2">
       <div>
         <NavLink className="list" to="/list" exact="true">
-          <button>Shopping List</button>
+          <button>Grocery List</button>
         </NavLink>
       </div>
       <div className="logout">

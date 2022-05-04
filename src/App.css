@@ -87,8 +87,7 @@ img {
   border: 1px solid rgba(128, 128, 128, 0.409);
 }
 form {
-  border: 1px solid rgb(0, 0, 0);
-
+  /* border: 1px solid rgb(0, 0, 0); */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -116,11 +115,11 @@ form h1 {
 }
 form p {
   color: blue;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-decoration: underline;
 }
-form input {
+.form form input {
   font-size: 20px;
   width: 50vh;
   height: 7vh;
@@ -160,21 +159,23 @@ form input {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  color: #6c4812;
   margin-top: 3px;
   padding-left: 5px;
   padding-right: 5px;
 }
 .nav2 button {
   margin-left: 5px;
-  padding: 8px;
+  padding: 5px;
   background-color: #f49f9f;
   color: white;
-  font-size: 15px;
-  font-weight: 300;
-  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
   border: none;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.nav2 button:hover {
+  background-color: #f26060;
 }
 
 @media only screen and (max-width: 1100px) {
