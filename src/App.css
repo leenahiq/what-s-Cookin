@@ -278,9 +278,7 @@ form input {
 .github {
   font-family: lightfont;
   background-color: transparent;
-  border: 2px solid #858585;
-  border-radius: 8px;
-  color: black;
+
   font-size: 15px;
   padding: 1vh;
   margin: 0.25vh;
@@ -303,7 +301,6 @@ form input {
 .github:hover,
 .recipe-button:hover,
 .go-to-recipe-button:hover {
-  background-color: #f49f9f;
   color: black;
   cursor: pointer;
 }
@@ -376,16 +373,6 @@ p {
   font-family: lightfont;
 }
 
-.about-container {
-  /* background: #FFFFFF; */
-  /* border: 1px solid red; */
-  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); */
-  /* border-radius: 46px; 
-  height: 90vh; */
-  display: flex;
-  justify-content: center;
-}
-
 .about-container .header {
   margin: 20px;
 }
@@ -404,32 +391,30 @@ p {
   text-align: center;
 }
 
-.header-container {
-  /* border: 1px solid orange; */
-}
-
 .about-container .team-card {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   background: #ffffff;
-  border: 1px solid #000000;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 46px;
-  height: 55vh;
-  width: 25vh;
-  padding: 10px 150px 10px 150px;
-  margin: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.about-container .team-card h2 {
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .team-card-container {
-  /* border: 1px solid pink; */
   display: flex;
-  position: absolute;
+  justify-content: space-around;
   flex-wrap: wrap;
-  top: 25%;
+  flex-direction: row;
+  margin-top: 10px;
+  color: #f49f9f;
 }
 
 li {
