@@ -18,17 +18,19 @@ export default function Meal({ meal }) {
   }, [meal.id]);
 
   return (
-    <div className="calorie-container" >
-    <article>
-      <h2>{meal.title}</h2>
-      <img src={imageUrl} alt="recipe" />
-      <ul className="instructions">
-        <li>Preparation time: {meal.readyInMinutes} minutes</li>
-        <li>Number of servings: {meal.servings}</li>
-      </ul>
+    <div className="calorie-container">
+      <article>
+        <h2>{meal.title}</h2>
+        <img src={imageUrl} alt="recipe" />
+        <ul className="instructions">
+          <li>Preparation time: {meal.readyInMinutes} minutes</li>
+          <li>Number of servings: {meal.servings}</li>
+        </ul>
 
-      <a href={meal.sourceUrl} target="_blank">Go to Recipe</a>
-    </article>
+        <a href={meal.sourceUrl} target="_blank" rel="noopener noreferrer">
+          Go to Recipe
+        </a>
+      </article>
     </div>
   );
 }

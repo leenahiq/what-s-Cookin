@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RecipeDetails from "./RecipeDetails";
-import "../../App.css"
+import "../../App.css";
 
 const Recipe = ({ recipe }) => {
   const [show, setShow] = useState(false);
@@ -9,15 +9,22 @@ const Recipe = ({ recipe }) => {
   return (
     <div className="recipe">
       <div className="recipe-card">
-      <h2>{label}</h2>
-      <div className="recipe-image">
-      <img src={image} alt={label} />
-      </div>
-      <a className="go-to-recipe-button" href={url} target="_blank" rel="noopener noreferrer">
-        Go to Recipe 
-      </a>
-      <a className="recipe-button" onClick={() => setShow(!show)}>Ingredients</a>
-      {show && <RecipeDetails ingredients={ingredients} />}
+        <h2>{label}</h2>
+        <div className="recipe-image">
+          <img src={image} alt={label} />
+        </div>
+        <button
+          className="go-to-recipe-button"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Go to Recipe
+        </button>
+        <button className="recipe-button" onClick={() => setShow(!show)}>
+          Ingredients
+        </button>
+        {show && <RecipeDetails ingredients={ingredients} />}
       </div>
     </div>
   );

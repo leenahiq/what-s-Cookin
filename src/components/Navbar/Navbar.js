@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 import logo from "./logo.png";
+import { FaHome, FaPizzaSlice } from "react-icons/fa";
 
 const Navbar = () => {
   function animation() {
@@ -75,7 +76,10 @@ const Navbar = () => {
 
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
-              <i class="bi bi-house-door"></i>Home
+              <i>
+                <FaHome />
+              </i>
+              Home
             </NavLink>
           </li>
 
@@ -87,7 +91,10 @@ const Navbar = () => {
           </li> */}
           <li className="nav-item">
             <NavLink className="nav-link" to="/recipes" exact>
-              <i class="bi bi-egg-fried"></i>
+              <i>
+                {" "}
+                <FaPizzaSlice />
+              </i>
               Recipes
             </NavLink>
           </li>

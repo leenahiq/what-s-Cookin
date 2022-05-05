@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MealList from "./MealList";
-// import "../../App.css";
-import "./final.css"
+
+import "./final.css";
 
 function Calories() {
   const [mealData, setMealData] = useState(null);
@@ -26,15 +26,19 @@ function Calories() {
 
   return (
     <div className="Getapi">
-      <section className="controls">
-        <input
-          type="number"
-          placeholder="Calories (e.g. 2000)"
-          onChange={handleChange}
-        />
-        <button onClick={getMealData}>Get Daily Meal Plan</button>
-      </section>
-      {mealData && <MealList mealData={mealData} />}
+      <div className="controls">
+        <div>
+          <input
+            type="number"
+            placeholder="Calories (e.g. 2000)"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="btn">
+          <button onClick={getMealData}>Get Daily Meal Plan</button>
+        </div>
+      </div>
+      <div>{mealData && <MealList mealData={mealData} />}</div>
     </div>
   );
 }

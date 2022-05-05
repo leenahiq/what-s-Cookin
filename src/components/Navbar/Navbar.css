@@ -17,6 +17,8 @@ body {
 }
 i {
   margin-right: 10px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 nav {
@@ -38,8 +40,8 @@ nav img {
 
 .logo {
   position: absolute;
-  height: 18vh;
-  width: 18vh;
+  height: 15vh;
+  width: 15vh;
   margin-top: -73px;
   /* change px to % -7.5% */
 }
