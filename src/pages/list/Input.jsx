@@ -17,7 +17,7 @@ const Input = ({
         <div id="todo-list">
           <div>
             {/* heading */}
-            <h1 className="title">Shoping List</h1>
+            <h1 className="title">Shopping List</h1>
             {/* ADD task input field */}
             <form onSubmit={handleSubmit} className="addForm">
               <input
