@@ -1,0 +1,102 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.addToListButton {
+    display: flex;
+    justify-content: center ;
+    background-color: #f49f9f;
+    margin: 2px;
+    font-family: lightfont;
+    border: none;
+    /* border: 2px solid #858585; */
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    width: 20vh;
+    margin-top: 3vh ;
+    margin-left:15vh;
+    margin-right: 15vh;
+}
+.addForm {
+    font-family: lightfont;
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    /* color: black; */
+    font-size: 20px;
+}
+
+.todo-text {
+    font-family: lightfont;
+}
+.editButton {
+    background-color: #f49f9f;
+    margin: 2px;
+    font-family: lightfont;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    /* box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%); */
+    width: 10vh;
+}
+.deleteButton {
+    background-color: #f49f9f;
+    margin: 2px;
+    font-family: lightfont;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    /* box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%); */
+    width: 13vh;
+}
+.submitEditButton {
+    background-color: #f49f9f;
+    margin: 2px;
+    font-family: lightfont;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    /* box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%); */
+    width: 20vh;
+}
+.editBox {
+    display: flex;
+    height: 12vh;
+    font-family: lightfont;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 2vh;
+    width: 42vh;
+    border: 2px solid #f49f9f;
+}
+.todo-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.listWrapper {
+    border: 2px solid #f49f9f;
+    padding: 10px;
+    margin: 18px;
+    border-radius: 15px;
+}
+
+.listText {
+    display: flex;
+    border: 2px solid #f49f9f;
+    /* width: 15vh; */
+    height: 7vh;
+    margin: 5px;
+    border-radius: 5px;
+}

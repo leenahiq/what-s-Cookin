@@ -17,9 +17,9 @@ const Input = ({
         <div id="todo-list">
           <div>
             {/* heading */}
-            <h1>Shoping List</h1>
+            <h1 className="title">Shoping List</h1>
             {/* ADD task input field */}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="addForm">
               <input
                 type="text"
                 placeholder="ADD YOUR item"
@@ -27,14 +27,16 @@ const Input = ({
                 value={todo}
               />
 
-              <button type="submit">Add To List</button>
+              <button type="submit" className="addToListButton">Add To List</button>
             </form>
           </div>
 
           {todos.map((todo) => (
+            <div className="listWrapper">
             <div key={todo.id} className="todo">
               <div className="todo-text">
                 <input
+                className="checkbox"
                   type="checkbox"
                   id="completed"
                   checked={todo.completed}
@@ -42,28 +44,32 @@ const Input = ({
                 />
                 {todo.id === todoEditing ? (
                   <input
+                  className="editBox"
                     type="text"
                     onChange={(e) => setEditingText(e.target.value)}
                   />
                 ) : (
-                  <div>{todo.text}</div>
+                  <div className="listText">{todo.text}</div>
                 )}
               </div>
               {/* edit button */}
               <div className="todo-actions">
                 {todo.id === todoEditing ? (
-                  <button onClick={() => submitEdits(todo.id)}>
+                  <button onClick={() => submitEdits(todo.id)} className= "submitEditButton">
                     Submit Edits
                   </button>
                 ) : (
-                  <button onClick={() => setTodoEditing(todo.id)}>Edit</button>
+                  <button onClick={() => setTodoEditing(todo.id)} className="editButton">Edit</button>
                 )}
 
-                <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+                <button onClick={() => deleteTodo(todo.id)} className="deleteButton">Delete</button>
               </div>
             </div>
+            </div>
           ))}
+          
         </div>
+        
       </div>
     </div>
   );
