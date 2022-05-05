@@ -252,7 +252,7 @@ form input {
 .calorie-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 150px 0 150px;
@@ -269,7 +269,7 @@ form input {
 .recipe a:visited,
 .recipe a:hover,
 .recipe a:active {
-  color: black;
+  color: rgba(0, 0, 0, 0.34);
   text-decoration: none;
   cursor: pointer;
 }
@@ -306,56 +306,42 @@ form input {
 }
 
 .Getapi button {
+  color: #ffffff;
   font-family: lightfont;
   border: none;
-  background-color: transparent;
-  border: 2px solid #858585;
-  border-radius: 8px;
-  color: black;
   font-size: 20px;
+  width: 30vh;
+  height: 7vh;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.318);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: #f49f9f;
+}
+.btn {
+  margin-left: 60px;
 }
 
 .Getapi button:hover {
   cursor: pointer;
-  background-color: #b8b8b8;
+  background-color: #f26060;
 }
 
 .Getapi input {
   font-family: lightfont;
-  border: none;
-  background-color: transparent;
-  border: 2px solid #858585;
-  border-radius: 8px;
-  color: black;
   font-size: 20px;
+  width: 50vh;
+  height: 7vh;
+
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.318);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.Getapi input::placeholder {
-  color: black;
-  justify-content: center;
-}
-
-input:focus {
-  outline: none;
-}
-
-.Getapi {
-  padding: 5px;
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 150px 0 150px;
-  padding-top: 20px;
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 46px;
-}
-
-.recipe-container {
-  border: 1px solid black;
+/* .recipe-container {
+  border: 1px solid red;
   box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   display: flex;
@@ -363,11 +349,12 @@ input:focus {
   flex-direction: row;
   height: 60vh;
   width: 100vh;
-}
+} */
 
-.recipe-container img {
+/* .recipe-container img {
   width: 300px;
-}
+  border: 2px solid red;
+} */
 
 p {
   font-family: lightfont;
@@ -376,15 +363,6 @@ p {
 .about-container .header {
   margin: 20px;
 }
-
-/* .team-img {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 30%;
-  width: 30%;
-  margin: auto;
-} */
 
 .job-title {
   font-size: 20px;
@@ -414,7 +392,7 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 10px;
-  color: #f49f9f;
+  color: #f16969;
 }
 
 li {
