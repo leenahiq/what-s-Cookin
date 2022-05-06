@@ -5,19 +5,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1vh 15vw 1vh 15vw;
+  padding: 10px;
   background: #ffffff;
-  border: 1px solid black;
+
+  margin: 20px;
   box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
 .calorie-container img {
   border-radius: 14px;
-  border: 3px solid #f49f9f;
-}
-
-.calorie-container a:hover {
-  color: #f49f9f;
+  width: 25vh;
+  height: 25vh;
 }
 
 .instructions li {

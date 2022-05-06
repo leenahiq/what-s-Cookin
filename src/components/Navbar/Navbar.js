@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
+      <NavLink className="navbar-brand navbar-logo" to="/">
         <img className="logo" src={logo} alt="logo" />
       </NavLink>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
 
           <li className="nav-item active">
-            <NavLink className="nav-link" to="/" exact>
+            <NavLink className="nav-link" to="/">
               <i>
                 <FaHome />
               </i>
@@ -90,7 +90,7 @@ const Navbar = () => {
             </NavLink>
           </li> */}
           <li className="nav-item">
-            <NavLink className="nav-link" to="/recipes" exact>
+            <NavLink className="nav-link" to="/recipes">
               <i>
                 {" "}
                 <FaPizzaSlice />
@@ -99,13 +99,13 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/calories" exact>
+            <NavLink className="nav-link" to="/calories">
               <i class="bi bi-bar-chart-line-fill"></i>
               Calories
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about" exact>
+            <NavLink className="nav-link" to="/about">
               <i class="bi bi-file-earmark-person"></i>
               About
             </NavLink>

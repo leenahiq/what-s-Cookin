@@ -138,27 +138,29 @@ function App() {
           <Navbar user={user} setUser={setUser} />
           <Nav2 user={user} setUser={setUser} />
           <Routes>
-            <Route path="/" element={<Home />} exact="true" />
+            <Route path="/" element={<Home />} />
 
-            <Route path="/calories" element={<Calories />} exact="true" />
-            <Route path="/about" element={<About />} exact="true" />
+            <Route path="/calories" element={<Calories />} />
+            <Route path="/about" element={<About />} />
             <Route
               path="/recipes"
               element={
                 <div className="recipe-search">
                   {/* <h1>Food Searching App</h1> */}
-                  <form onSubmit={onSubmit} className="search-form">
-                    {alert !== "" && <Alert alert={alert} />}
-                    <input
-                      type="text"
-                      name="query"
-                      onChange={onChange}
-                      value={query}
-                      autoComplete="off"
-                      placeholder="search ingredient or dish"
-                    />
-                    <input type="submit" value="Search" />
-                  </form>
+                  <div>
+                    <form onSubmit={onSubmit} className="search-form">
+                      {alert !== "" && <Alert alert={alert} />}
+                      <input
+                        type="text"
+                        name="query"
+                        onChange={onChange}
+                        value={query}
+                        autoComplete="off"
+                        placeholder="search ingredient or dish"
+                      />
+                      <button type="submit">Get Recipe</button>
+                    </form>
+                  </div>
                   <div className="recipes">
                     {recipes !== [] &&
                       recipes.map((recipe) => (

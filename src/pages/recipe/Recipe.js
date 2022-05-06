@@ -13,15 +13,19 @@ const Recipe = ({ recipe }) => {
         <div className="recipe-image">
           <img src={image} alt={label} />
         </div>
-        <button
+        <a
           className="go-to-recipe-button"
           href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
           Go to Recipe
-        </button>
-        <button className="recipe-button" onClick={() => setShow(!show)}>
+        </a>
+        <button
+          type="Submit"
+          className="recipe-button"
+          onClick={() => setShow(!show)}
+        >
           Ingredients
         </button>
         {show && <RecipeDetails ingredients={ingredients} />}

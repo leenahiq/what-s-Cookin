@@ -6,7 +6,7 @@ export default function Meal({ meal }) {
 
   useEffect(() => {
     fetch(
-      `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=107127df5d2f4f389dcb4721842a7c77&includeNutrition=false`
+      `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=0e9cdeae827d40e59e3797a3c6d727ca&includeNutrition=false`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -19,18 +19,27 @@ export default function Meal({ meal }) {
 
   return (
     <div className="calorie-container">
-      <article>
+      <div>
         <h2>{meal.title}</h2>
+      </div>
+      <div>
+        {" "}
         <img src={imageUrl} alt="recipe" />
         <ul className="instructions">
           <li>Preparation time: {meal.readyInMinutes} minutes</li>
           <li>Number of servings: {meal.servings}</li>
         </ul>
-
-        <a href={meal.sourceUrl} target="_blank" rel="noopener noreferrer">
+      </div>
+      <div>
+        <a
+          className="go-to-recipe-button"
+          href={meal.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Go to Recipe
         </a>
-      </article>
+      </div>
     </div>
   );
 }

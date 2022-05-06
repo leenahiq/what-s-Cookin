@@ -12,7 +12,7 @@ const Signup = ({
       <div className="logside">
         <div className="text">
           <h1>What's Cookin!</h1>
-          <h3>Desire Acording to your mood </h3>
+          <h3>Food Acording to your mood </h3>
         </div>
         <img className="imgsignup" src={img2} alt="img" />
       </div>
