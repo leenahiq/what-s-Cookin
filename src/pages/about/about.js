@@ -17,10 +17,9 @@ const About = () => {
         <h1 className="text-center">
           <b>
             {" "}
-            Meat the passionate team of Master35 Holy, Leenah, Rayan, Micheal
+            Meet the passionate team of Master35 Holly, Leenah, Ryan, Michael
             and Farzad who worked immensely through out in final weeks and we
-            are proud to present our MERN Stack Recipie App as our final
-            project.
+            are proud to present our MERN Stack Recipe App as our final project.
           </b>
         </h1>
       </div>

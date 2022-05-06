@@ -13,7 +13,7 @@ const Login = ({
       <div className="logside">
         <div className="text">
           <h1>What's Cookin!</h1>
-          <h3>Food Acording to your mood </h3>
+          <h3>Food according to your mood </h3>
         </div>
 
         <img className="imglogin" src={img1} alt="img" />
@@ -22,7 +22,7 @@ const Login = ({
         <form onSubmit={handler}>
           <div>
             {" "}
-            <h1>Log in to what's Cookin!</h1>
+            <h1>Log in to What's Cookin!</h1>
           </div>
           <div>
             <input
@@ -43,7 +43,7 @@ const Login = ({
           </div>
 
           <div>
-            Dont have account?
+            Don't have account?
             <p className="p" onClick={() => setIsclicked(false)}>
               Sign Up
             </p>
