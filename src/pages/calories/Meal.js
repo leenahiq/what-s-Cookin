@@ -32,7 +32,7 @@ export default function Meal({ meal }) {
       </div>
       <div>
         <a
-          className="go-to-recipe-button"
+          className="mealBtn"
           href={meal.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"

@@ -269,7 +269,8 @@ form input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-color: #f49f9f;
+  border-radius: 15px;
   box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -290,7 +291,8 @@ form input {
   cursor: pointer;
 }
 
-.recipe-button {
+.recipe-button,
+.go-to-recipe-button {
   font-family: lightfont;
   background-color: white;
   border: none;
@@ -301,22 +303,27 @@ form input {
   margin: 2%;
   box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
-.go-to-recipe-button {
-  background-color: pink;
-  padding: 10px;
-  border-radius: px;
-}
+/* .go-to-recipe-button {
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+} */
 
 .linkedin:hover,
 .github:hover,
 .recipe-button:hover,
-.go-to-recipe-button:hover {
+.go-to-recipe-button:hover,
+.recipe-button :hover {
   color: black;
   cursor: pointer;
 }
+.recipe-img a {
+  cursor: pointer;
+  color: black;
+}
 .Getapi {
   margin: 20px;
-  border: 2px solid #eb5151;
+
   display: flex;
   justify-content: baseline;
   flex-wrap: wrap;

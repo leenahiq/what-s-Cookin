@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
 
           <li className="nav-item active">
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="">
               <i>
                 <FaHome />
               </i>

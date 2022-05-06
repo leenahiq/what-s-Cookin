@@ -138,7 +138,7 @@ function App() {
           <Navbar user={user} setUser={setUser} />
           <Nav2 user={user} setUser={setUser} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<Home />} />
 
             <Route path="/calories" element={<Calories />} />
             <Route path="/about" element={<About />} />

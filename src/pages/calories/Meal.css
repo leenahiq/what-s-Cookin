@@ -6,16 +6,22 @@
   align-items: center;
   text-align: center;
   padding: 10px;
-  background: #ffffff;
-
+  background-color: #f49f9f;
+  border-radius: 15px;
   margin: 20px;
   box-shadow: 6px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
 .calorie-container img {
   border-radius: 14px;
-  width: 25vh;
-  height: 25vh;
+  width: 35vh;
+  height: 35vh;
+}
+.mealBtn {
+  background-color: white;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .instructions li {
